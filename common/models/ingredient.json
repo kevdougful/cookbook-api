@@ -1,0 +1,35 @@
+{
+  "name": "Ingredient",
+  "plural": "ingredients",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "vegan": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "vegetarian": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
